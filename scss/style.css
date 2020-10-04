@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: url(/images/bg-intro-mobile.png) no-repeat, #ff7a7a;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.flex__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.flex__text h1 {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.flex__text p {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  font-weight: 300;
+  color: white;
+  line-height: 1.5;
+}
+
+.flex__form .trial {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  background-color: #6055a5;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+.flex__form p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.flex__form p b {
+  font-weight: 600;
+}
+
+.flex__form .form {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 2rem 1rem;
+  border-radius: 7px;
+  background-color: white;
+  -webkit-box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.flex__form .input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: 1px solid #d4d4d4;
+}
+
+.flex__form .error {
+  background: url(/images/icon-error.svg) no-repeat;
+  background-position: 95%;
+  border: 1px solid #ff7a7a;
+}
+
+.flex__form .error::-webkit-input-placeholder {
+  color: #ff7a7a;
+}
+
+.flex__form .error:-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.flex__form .error::-ms-input-placeholder {
+  color: #ff7a7a;
+}
+
+.flex__form .error::placeholder {
+  color: #ff7a7a;
+}
+
+.flex__form .error-msg {
+  color: #ff7a7a;
+  font-size: 0.6rem;
+  display: block;
+  text-align: right;
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  font-style: italic;
+}
+
+.flex__form .btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: #38cc8c;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+
+.flex__form .terms {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  color: #b9b6d3;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 720px) {
+  .flex__form .terms {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+.flex__form .red {
+  color: #ff7a7a;
+  font-weight: 500;
+}
+
+@media (min-width: 720px) {
+  body {
+    background: url(/images/bg-intro-desktop.png) no-repeat, #ff7a7a;
+  }
+  .container {
+    width: 80%;
+    margin: 4rem auto;
+  }
+  .flex__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+  }
+  .flex .form {
+    margin-bottom: 0;
+  }
+  .flex__text h1 {
+    width: 90%;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2.7rem;
+    line-height: 1.5;
+  }
+  .flex__text p {
+    width: 90%;
+    margin: 0;
+    font-weight: 400;
+    color: white;
+    line-height: 1.5;
+  }
+}
+/*# sourceMappingURL=style.css.map */

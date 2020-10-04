@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background: url(/images/bg-intro-mobile.png) no-repeat, $primary1;
+  color: white;
+}
+
+.container {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+.flex {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__text {
+    h1 {
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 5rem;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+    p {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      font-weight: 300;
+      color: white;
+      line-height: 1.5;
+    }
+  }
+  &__form {
+    .trial {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      padding: 1rem 2rem;
+      border-radius: 7px;
+      background-color: $primary3;
+      box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+    p {
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      b {
+        font-weight: 600;
+      }
+    }
+    .form {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      padding: 2rem 1rem;
+      border-radius: 7px;
+      background-color: white;
+      box-shadow: 0px 11px 8px 0px rgba(0, 0, 0, 0.25);
+    }
+    .input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      border: 1px solid #d4d4d4;
+    }
+    .error {
+      background: url(/images/icon-error.svg) no-repeat;
+      background-position: 95%;
+      border: 1px solid $primary1;
+
+      &::placeholder {
+        color: $primary1;
+      }
+    }
+    .error-msg {
+      color: $primary1;
+      font-size: 0.6rem;
+      display: block;
+      text-align: right;
+      position: relative;
+      bottom: 10px;
+      right: 10px;
+      font-style: italic;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 1rem;
+      background-color: $primary2;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 4px;
+      box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    }
+    .terms {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 1rem;
+      color: $neutral2;
+      font-size: 0.8rem;
+      line-height: 1.5;
+
+      @media (min-width: 720px) {
+        font-size: 0.7rem;
+        text-align: center;
+      }
+    }
+    .red {
+      color: $primary1;
+      font-weight: 500;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  body {
+    background: url(/images/bg-intro-desktop.png) no-repeat, $primary1;
+  }
+  .container {
+    width: 80%;
+    margin: 4rem auto;
+  }
+  .flex {
+    &__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+    .form {
+      margin-bottom: 0;
+    }
+    &__text {
+      h1 {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 2.7rem;
+        line-height: 1.5;
+      }
+      p {
+        width: 90%;
+        margin: 0;
+        font-weight: 400;
+        color: white;
+        line-height: 1.5;
+      }
+    }
+  }
+}
